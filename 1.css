@@ -1,0 +1,60 @@
+.car{
+    width: 400px;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.car img{
+    width: 100%;
+    animation: 3s linear infinite move;
+}
+
+
+
+.wheel{
+    left:200px;
+    position: absolute;
+    bottom: 70px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.wheel img{
+   
+
+    width: 65px;
+    height: 65px;
+    animation: wheel 3s linear infinite move;
+}
+
+.back-wheel{
+    left: -146px;
+    position: absolute;
+   
+}
+.front-wheel{
+    left: 100px;
+    position: absolute;
+}
+
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move {
+	from {
+		margin-left: 0;
+	}
+	to {
+		margin-left:1000px;
+	}
+}
+body{
+    background: url(./doroga.jpg);
+    background-size: cover;
+}
